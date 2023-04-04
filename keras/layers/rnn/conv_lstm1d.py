@@ -15,13 +15,13 @@
 """1D Convolutional LSTM layer."""
 
 
-from keras.layers.rnn.base_conv_lstm import ConvLSTM
+from tensorflow.python.keras.layers.rnn.base_conv_lstm import ConvLSTM
 
 # isort: off
 from tensorflow.python.util.tf_export import keras_export
 
 
-@keras_export("keras.layers.ConvLSTM1D")
+@keras_export("tensorflow.python.keras.layers.ConvLSTM1D")
 class ConvLSTM1D(ConvLSTM):
     """1D Convolutional LSTM.
 

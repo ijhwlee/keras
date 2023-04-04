@@ -27,13 +27,13 @@ import sys
 import types as python_types
 import warnings
 
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 
-from keras.layers.rnn import lstm
-from keras.layers.rnn.abstract_rnn_cell import AbstractRNNCell
-from keras.saving import serialization_lib
-from keras.utils import generic_utils
-from keras.utils import tf_inspect
+from tensorflow.python.keras.layers.rnn import lstm
+from tensorflow.python.keras.layers.rnn.abstract_rnn_cell import AbstractRNNCell
+from tensorflow.python.keras.saving import serialization_lib
+from tensorflow.python.keras.utils import generic_utils
+from tensorflow.python.keras.utils import tf_inspect
 
 # isort: off
 from tensorflow.python.util.tf_export import tf_export

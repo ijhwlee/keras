@@ -15,21 +15,21 @@
 """Long Short-Term Memory V1 layer."""
 
 
-from keras import activations
-from keras import constraints
-from keras import initializers
-from keras import regularizers
-from keras.engine.input_spec import InputSpec
-from keras.layers.rnn import lstm
-from keras.layers.rnn import rnn_utils
-from keras.layers.rnn.base_rnn import RNN
+from tensorflow.python.keras import activations
+from tensorflow.python.keras import constraints
+from tensorflow.python.keras import initializers
+from tensorflow.python.keras import regularizers
+from tensorflow.python.keras.engine.input_spec import InputSpec
+from tensorflow.python.keras.layers.rnn import lstm
+from tensorflow.python.keras.layers.rnn import rnn_utils
+from tensorflow.python.keras.layers.rnn.base_rnn import RNN
 
 # isort: off
 from tensorflow.python.platform import tf_logging as logging
 from tensorflow.python.util.tf_export import keras_export
 
 
-@keras_export(v1=["keras.layers.LSTMCell"])
+@keras_export(v1=["tensorflow.python.keras.layers.LSTMCell"])
 class LSTMCell(lstm.LSTMCell):
     """Cell class for the LSTM layer.
 

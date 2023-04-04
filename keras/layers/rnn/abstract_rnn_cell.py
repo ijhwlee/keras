@@ -15,14 +15,14 @@
 """Base class for RNN cells."""
 
 
-from keras.engine import base_layer
-from keras.layers.rnn import rnn_utils
+from tensorflow.python.keras.engine import base_layer
+from tensorflow.python.keras.layers.rnn import rnn_utils
 
 # isort: off
 from tensorflow.python.util.tf_export import keras_export
 
 
-@keras_export("keras.layers.AbstractRNNCell")
+@keras_export("tensorflow.python.keras.layers.AbstractRNNCell")
 class AbstractRNNCell(base_layer.Layer):
     """Abstract object representing an RNN cell.
 

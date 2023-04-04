@@ -20,15 +20,15 @@ Wrappers are layers that augment the functionality of another layer.
 
 import copy
 
-from keras.engine.base_layer import Layer
-from keras.saving import serialization_lib
-from keras.saving.legacy import serialization as legacy_serialization
+from tensorflow.python.keras.engine.base_layer import Layer
+from tensorflow.python.keras.saving import serialization_lib
+from tensorflow.python.keras.saving.legacy import serialization as legacy_serialization
 
 # isort: off
 from tensorflow.python.util.tf_export import keras_export
 
 
-@keras_export("keras.layers.Wrapper")
+@keras_export("tensorflow.python.keras.layers.Wrapper")
 class Wrapper(Layer):
     """Abstract wrapper base class.
 

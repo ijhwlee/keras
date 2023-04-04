@@ -15,17 +15,17 @@
 """Base class for N-D convolutional LSTM layers."""
 
 
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 
-from keras import activations
-from keras import backend
-from keras import constraints
-from keras import initializers
-from keras import regularizers
-from keras.engine import base_layer
-from keras.layers.rnn.base_conv_rnn import ConvRNN
-from keras.layers.rnn.dropout_rnn_cell_mixin import DropoutRNNCellMixin
-from keras.utils import conv_utils
+from tensorflow.python.keras import activations
+from tensorflow.python.keras import backend
+from tensorflow.python.keras import constraints
+from tensorflow.python.keras import initializers
+from tensorflow.python.keras import regularizers
+from tensorflow.python.keras.engine import base_layer
+from tensorflow.python.keras.layers.rnn.base_conv_rnn import ConvRNN
+from tensorflow.python.keras.layers.rnn.dropout_rnn_cell_mixin import DropoutRNNCellMixin
+from tensorflow.python.keras.utils import conv_utils
 
 
 class ConvLSTMCell(DropoutRNNCellMixin, base_layer.BaseRandomLayer):

@@ -22,12 +22,12 @@ from __future__ import print_function
 import hashlib
 import numbers
 
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 
-from keras.layers.rnn.cell_wrappers import _enumerated_map_structure_up_to
-from keras.layers.rnn.cell_wrappers import _parse_config_to_function
-from keras.layers.rnn.cell_wrappers import _serialize_function_to_config
-from keras.layers.rnn.legacy_cells import RNNCell
+from tensorflow.python.keras.layers.rnn.cell_wrappers import _enumerated_map_structure_up_to
+from tensorflow.python.keras.layers.rnn.cell_wrappers import _parse_config_to_function
+from tensorflow.python.keras.layers.rnn.cell_wrappers import _serialize_function_to_config
+from tensorflow.python.keras.layers.rnn.legacy_cells import RNNCell
 
 # isort: off
 from tensorflow.python.util.tf_export import keras_export

@@ -16,15 +16,15 @@
 
 
 import numpy as np
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 
-from keras import backend
-from keras.engine import base_layer
-from keras.engine.input_spec import InputSpec
-from keras.layers.rnn.base_rnn import RNN
-from keras.utils import conv_utils
-from keras.utils import generic_utils
-from keras.utils import tf_utils
+from tensorflow.python.keras import backend
+from tensorflow.python.keras.engine import base_layer
+from tensorflow.python.keras.engine.input_spec import InputSpec
+from tensorflow.python.keras.layers.rnn.base_rnn import RNN
+from tensorflow.python.keras.utils import conv_utils
+from tensorflow.python.keras.utils import generic_utils
+from tensorflow.python.keras.utils import tf_utils
 
 
 class ConvRNN(RNN):

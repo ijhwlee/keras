@@ -20,14 +20,14 @@ import os
 import shutil
 
 import numpy as np
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 from absl.testing import parameterized
 
-import keras
-from keras.layers.rnn import gru_lstm_utils
-from keras.testing_infra import test_combinations
-from keras.testing_infra import test_utils
-from keras.utils import np_utils
+import tensorflow.python.keras
+from tensorflow.python.keras.layers.rnn import gru_lstm_utils
+from tensorflow.python.keras.testing_infra import test_combinations
+from tensorflow.python.keras.testing_infra import test_utils
+from tensorflow.python.keras.utils import np_utils
 
 # isort: off
 from tensorflow.core.protobuf import rewriter_config_pb2

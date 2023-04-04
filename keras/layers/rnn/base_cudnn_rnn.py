@@ -15,11 +15,11 @@
 """Base class for recurrent layers backed by cuDNN."""
 
 
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 
-from keras import backend
-from keras.engine.input_spec import InputSpec
-from keras.layers.rnn.base_rnn import RNN
+from tensorflow.python.keras import backend
+from tensorflow.python.keras.engine.input_spec import InputSpec
+from tensorflow.python.keras.layers.rnn.base_rnn import RNN
 
 
 class _CuDNNRNN(RNN):

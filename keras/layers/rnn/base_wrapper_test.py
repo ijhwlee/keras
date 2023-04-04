@@ -14,10 +14,10 @@
 # ==============================================================================
 """Tests for the Wrapper base class."""
 
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 from absl.testing import parameterized
 
-import keras
+import tensorflow.python.keras
 
 
 class ExampleWrapper(keras.layers.Wrapper):

@@ -18,15 +18,15 @@
 import copy
 
 import numpy as np
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 from absl.testing import parameterized
 
-import keras
-from keras.engine import base_layer_utils
-from keras.layers import core
-from keras.layers.rnn.cell_wrappers import ResidualWrapper
-from keras.testing_infra import test_combinations
-from keras.testing_infra import test_utils
+import tensorflow.python.keras
+from tensorflow.python.keras.engine import base_layer_utils
+from tensorflow.python.keras.layers import core
+from tensorflow.python.keras.layers.rnn.cell_wrappers import ResidualWrapper
+from tensorflow.python.keras.testing_infra import test_combinations
+from tensorflow.python.keras.testing_infra import test_utils
 
 # isort: off
 from tensorflow.python.checkpoint import (

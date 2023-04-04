@@ -16,12 +16,12 @@
 
 
 import numpy as np
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 from absl.testing import parameterized
 
-import keras
-from keras.testing_infra import test_combinations
-from keras.testing_infra import test_utils
+import tensorflow.python.keras
+from tensorflow.python.keras.testing_infra import test_combinations
+from tensorflow.python.keras.testing_infra import test_utils
 
 # isort: off
 from tensorflow.python.checkpoint import (

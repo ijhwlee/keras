@@ -15,9 +15,9 @@
 """Utilities for RNN cells and layers."""
 
 
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 
-from keras.utils import control_flow_util
+from tensorflow.python.keras.utils import control_flow_util
 
 # isort: off
 from tensorflow.python.platform import tf_logging as logging

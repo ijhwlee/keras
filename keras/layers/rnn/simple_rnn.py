@@ -15,26 +15,26 @@
 """Fully connected RNN layer."""
 
 
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 
-from keras import activations
-from keras import backend
-from keras import constraints
-from keras import initializers
-from keras import regularizers
-from keras.engine import base_layer
-from keras.engine.input_spec import InputSpec
-from keras.layers.rnn import rnn_utils
-from keras.layers.rnn.base_rnn import RNN
-from keras.layers.rnn.dropout_rnn_cell_mixin import DropoutRNNCellMixin
-from keras.utils import tf_utils
+from tensorflow.python.keras import activations
+from tensorflow.python.keras import backend
+from tensorflow.python.keras import constraints
+from tensorflow.python.keras import initializers
+from tensorflow.python.keras import regularizers
+from tensorflow.python.keras.engine import base_layer
+from tensorflow.python.keras.engine.input_spec import InputSpec
+from tensorflow.python.keras.layers.rnn import rnn_utils
+from tensorflow.python.keras.layers.rnn.base_rnn import RNN
+from tensorflow.python.keras.layers.rnn.dropout_rnn_cell_mixin import DropoutRNNCellMixin
+from tensorflow.python.keras.utils import tf_utils
 
 # isort: off
 from tensorflow.python.platform import tf_logging as logging
 from tensorflow.python.util.tf_export import keras_export
 
 
-@keras_export("keras.layers.SimpleRNNCell")
+@keras_export("tensorflow.python.keras.layers.SimpleRNNCell")
 class SimpleRNNCell(DropoutRNNCellMixin, base_layer.BaseRandomLayer):
     """Cell class for SimpleRNN.
 

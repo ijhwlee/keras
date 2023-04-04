@@ -29,15 +29,15 @@ from __future__ import print_function
 import collections
 import warnings
 
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 
-from keras import activations
-from keras import backend
-from keras import initializers
-from keras.engine import base_layer_utils
-from keras.engine import input_spec
-from keras.legacy_tf_layers import base as base_layer
-from keras.utils import tf_utils
+from tensorflow.python.keras import activations
+from tensorflow.python.keras import backend
+from tensorflow.python.keras import initializers
+from tensorflow.python.keras.engine import base_layer_utils
+from tensorflow.python.keras.engine import input_spec
+from tensorflow.python.keras.legacy_tf_layers import base as base_layer
+from tensorflow.python.keras.utils import tf_utils
 
 # isort: off
 from tensorflow.python.platform import tf_logging as logging

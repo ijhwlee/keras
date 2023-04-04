@@ -17,19 +17,19 @@
 
 import collections
 
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 
-from keras import constraints
-from keras import initializers
-from keras import regularizers
-from keras.layers.rnn import gru_lstm_utils
-from keras.layers.rnn.base_cudnn_rnn import _CuDNNRNN
+from tensorflow.python.keras import constraints
+from tensorflow.python.keras import initializers
+from tensorflow.python.keras import regularizers
+from tensorflow.python.keras.layers.rnn import gru_lstm_utils
+from tensorflow.python.keras.layers.rnn.base_cudnn_rnn import _CuDNNRNN
 
 # isort: off
 from tensorflow.python.util.tf_export import keras_export
 
 
-@keras_export(v1=["keras.layers.CuDNNGRU"])
+@keras_export(v1=["tensorflow.python.keras.layers.CuDNNGRU"])
 class CuDNNGRU(_CuDNNRNN):
     """Fast GRU implementation backed by cuDNN.
 

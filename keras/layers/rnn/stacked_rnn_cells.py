@@ -17,21 +17,21 @@
 
 import functools
 
-import tensorflow.compat.v2 as tf
+import tensorflow as tf
 
-from keras import backend
-from keras.engine import base_layer
-from keras.layers.rnn import rnn_utils
-from keras.saving import serialization_lib
-from keras.utils import generic_utils
-from keras.utils import tf_utils
+from tensorflow.python.keras import backend
+from tensorflow.python.keras.engine import base_layer
+from tensorflow.python.keras.layers.rnn import rnn_utils
+from tensorflow.python.keras.saving import serialization_lib
+from tensorflow.python.keras.utils import generic_utils
+from tensorflow.python.keras.utils import tf_utils
 
 # isort: off
 from tensorflow.python.platform import tf_logging as logging
 from tensorflow.python.util.tf_export import keras_export
 
 
-@keras_export("keras.layers.StackedRNNCells")
+@keras_export("tensorflow.python.keras.layers.StackedRNNCells")
 class StackedRNNCells(base_layer.Layer):
     """Wrapper allowing a stack of RNN cells to behave as a single cell.
 
